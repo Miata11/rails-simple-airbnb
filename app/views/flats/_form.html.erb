@@ -1,0 +1,20 @@
+<%= simple_form_for @flat do |f| %>
+  <div class="mb-3">
+    <%= f.input :name, label: 'Name', input_html: { class: 'form-control' } %>
+  </div>
+  <div class="mb-3">
+    <%= f.input :address, label: 'Address', input_html: { class: 'form-control' } %>
+  </div>
+  <div class="mb-3">
+    <%= f.input :description, label: 'Description', as: :text, input_html: { class: 'form-control' } %>
+  </div>
+  <div class="mb-3">
+    <%= f.input :price_per_night, label: 'Price per night (€)', input_html: { class: 'form-control' } %>
+  </div>
+  <div class="mb-3">
+    <%= f.input :number_of_guests, label: 'Number of guests', input_html: { class: 'form-control' } %>
+  </div>
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to 'Cancel', flats_path, class: 'btn btn-secondary' %>
