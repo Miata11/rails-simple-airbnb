@@ -5,6 +5,7 @@
     <% @flats.each do |flat| %>
       <div class="col-md-4 d-flex">
         <div class="card mb-3 w-100">
+          <img src="<%= flat.picture_url %>" class="card-img-top" style="height: 200px; object-fit: cover;" alt="<%= flat.name %>">
           <div class="card-body">
             <h5 class="card-title"><%= flat.name %></h5>
             <p class="card-text"><%= flat.address %></p>
